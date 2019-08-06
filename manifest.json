@@ -3,7 +3,7 @@
     “version”: “0.001”,
     "manifest_version": 1,
 
-    “description”: “Bookmark, keep, share, search, organise bookmarks like a 21st century pro."
+    “description”: “Bookmark, keep notes, share, search, organise bookmarks like a 21st century pro.",
     "icons": {
     // 128*128 icon for webstore, 48*48 icon for extension management page(developer tools page), 16*16 icon for browser icon. But if we give only 128, it will automatically arranges all these 3 icons.
         "128" : ".png"
@@ -11,13 +11,14 @@
 
     "browser_action": {   
         “default_title”: "I'm your bookmarker",
-        "default_popup": "popup_html"
+        "default_popup": "popup.html"
     },   
               
         
     “chrome_url_overrides” : {  “newtab”: “popup.html”},     
 
-    “permissions”: [“activeTab”]
-
-    },
+    “permissions”: ["storage",
+        ["http://*/*", "https://*/*"]
+    
+},
 }
