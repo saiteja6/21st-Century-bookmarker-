@@ -1,11 +1,18 @@
+.popup-wrapper{
+    width: 348px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+}
+
 .attach{
     border-radius: 20px;
     color: black;
     font-size: 27px; 
     font-weight: bold;
     position: absolute;
-    right: 350px;
-    top: 12px;
+    /* right: 350px;
+    top: 12px; */
     cursor: pointer;
     border-style: none;
 }
