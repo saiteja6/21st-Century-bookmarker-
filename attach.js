@@ -1,16 +1,20 @@
-function saveChanges() {
+window.onload = function(){
+document.getElementById("attach").onclick = function(){
     // Get a value saved in a form.
-    var theValue = textarea.value;
+    var theValue = document.getElementById('textarea').value;
     // Check that there's some code there.
     if (!theValue) {
-      message('Error: No value specified');
+      alert('Error: No value specified');
       return;
     }
     // Save it using the Chrome extension storage API.
-    chrome.storage.sync.set({'value': theValue}, function() {
+    chrome.storage.local.set({'value': theValue}, function() {
       // Notify that we saved.
-      message('Settings saved');
+      alert('Notes is saved');
+    });
+    chrome.storage.local.get(['value'], function(result) {
+      console.log('Value currently is ' + result.value);
     });
   }
-  
+}
 console.log("File Attached!");

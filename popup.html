@@ -4,16 +4,20 @@
     <head>
         <title>21st Century Bookmarker</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         </head>
         <body class="popup-wrapper">
+            <div class="inner-wrapper">
             <div>
-            <div>
+            <textarea id="textarea" rows="4" cols="24" style="margin-top:10px;" placeholder="Type your notes here!"></textarea>
             <button class="attach zoom" id="attach"> Attach Me! </button> 
-            <div class="search-placeholder" id="search"> 
-            <form action="/action_page.php">
-            <input type="text" name="search" placeholder="Search Me!">
-            </form> 
             </div>
+            <div class="search-placeholder"> 
+            <form action="/action_page.php">
+            <input type="text" name="search" placeholder="Search Me!" class="placeholder">
+            <i class="fa fa-search" style="font-size:24px" id="search"></i>
+            <!-- <input type="submit" class="submit" name="submit"> -->
+            </form> 
             </div>
             <div class="organise zoom" id="organise"> Organise </div>
         </div>

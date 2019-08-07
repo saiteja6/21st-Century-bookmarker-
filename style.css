@@ -1,18 +1,21 @@
 .popup-wrapper{
     width: 348px;
-    height: 200px;
+    height: 270px;
     overflow: hidden;
     margin: 0;
+    background-color: #27645b;
+}
+
+.inner-wrapper{
+    width: 200px;
+    margin: auto;
 }
 
 .attach{
     border-radius: 20px;
     color: black;
-    font-size: 27px; 
+    font-size: 18px; 
     font-weight: bold;
-    position: absolute;
-    /* right: 350px;
-    top: 12px; */
     cursor: pointer;
     border-style: none;
 }
@@ -21,13 +24,9 @@
     border-radius: 20px;
     background-color: black;
     color: black;
-    font-size: 27px;
+    font-size: 18px;
     font-weight: bold;
-    position: absolute;
-    right: 181px;
     text-align: center;
-    width: 200px;
-    top: 148px;
     cursor: pointer;
 }
 
@@ -37,31 +36,28 @@
     color: black;
     font-size: 30px;
     font-weight: bold;
-    position: absolute;
-    right: 80px;
-    top: 12px;
     cursor: pointer;
     border-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 189px;
+} 
+
+
+.placeholder{
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+    width: 144px;
+    margin-bottom: 10px;
 }
-
-/* .form{ 
-    display: block;
-    margin-top: 0em;
-    float: right;
-} */
-
-/* ::placeholder{
-    color: blue;
-    font-size: 1.5em;
-    float: right;
-} */
 
 .zoom {
     padding: 5px;
     background-color: turquoise;
     transition: transform .2s; /* Animation */
-    /* width: 0.5px;
-    height: 0.5px; */
+    display: block;
     margin: 0 auto;
 }
   

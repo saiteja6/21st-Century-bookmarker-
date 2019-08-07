@@ -1,22 +1,25 @@
 {
-    "name": "21st century bookmarker",  
-    "version": "0.001",
-    "manifest_version": 2,
+  "manifest_version": 2,
 
-    "description": "Bookmark, keep notes, share, search, organise bookmarks like a 21st century pro.",
-    "icons": {
-    // 128*128 icon for webstore, 48*48 icon for extension management page(developer tools page), 16*16 icon for browser icon. But if we give only 128, it will automatically arranges all these 3 icons.
-        "128" : "images/128.png"
+  "name": "21st Century BookMarker",
+  "description": "Bookmark, keep notes, share, search, organise bookmarks like a 21st century pro.",
+  "version": "1.0",
+
+  "browser_action": { 
+    "default_title": "Hey! Let me bookmark for you",
+      "default_popup": "popup.html"
     },
 
-    "browser_action": {   
-        "default_title": "I'm your bookmarker",
-        "default_popup": "popup.html"
-    },   
-              
-        
-    //"chrome_url_overrides" : {  "newtab": "popup.html"},     
+  "background": {
+     "scripts": ["background.js"]
+   },
 
-    "permissions": ["storage"]
-    
+  "icons" : {
+    "128" : "./images/green-bookmark.png"
+  },
+
+  "permissions": [
+    "contextMenus","storage","history"
+  ]
+  
 }
